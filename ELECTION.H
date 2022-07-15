@@ -14,14 +14,14 @@ typedef struct candidate{
     int votes;
 }CANDIDATE;
 
-//GLOBALS --------------------------------------------------------
-struct currentValidID currentValidID; //stores current Valid user ID parameters
-CANDIDATE candidateArray[20]; //to store information all candidates
-int numberOfCandidates; //Total number of candidates standing for election
-char studentVotes[200]; //to store information of votes given by each student
+//--------------------------------------------------------
+struct currentValidID currentValidID;  
+CANDIDATE candidateArray[20];  
+int numberOfCandidates;  
+char studentVotes[200];  
 //----------------------------------------------------------------
 
-//To extract year from userID -- For example, userID:2020btecs00064 year:2020 
+ 
 int extractYear(char userID[15])
 {
     int year=0;
@@ -44,7 +44,7 @@ int extractRollNo(char userID[15])
     return rollno;
 }
 
-//Will check whether the global branch code and inputed branch code is matching or not
+ 
 int checkBranchCode(char userID[15])
 {
     char branchCode[6];
@@ -270,8 +270,7 @@ void loadElectionInfoFromFile()
         }
         fclose(f2);
     }
-
-    //load banned votes
+ 
     int location;
     f3=fopen("banned.txt","r+");
     while(!feof(f3)){
