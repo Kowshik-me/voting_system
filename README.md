@@ -10,3 +10,8 @@ Download the repo, Once you have both the files "MAIN.C" and "ELECTION.H", You j
 </br>
 TO TEST: </br>
 You can just copy the "ELECTION.H" and "MAIN.C" and run in any online c compiler.
+</br>
+</br>
+
+![image](https://user-images.githubusercontent.com/104454045/180592223-15d1de96-a5be-4fa0-a6fc-0342ecb2c2b8.png)
+
